@@ -1,46 +1,30 @@
-# challenge-locadora
+# Projeto de Locação de Filmes em Vue 3 com TypeScript
 
-This template should help get you started developing with Vue 3 in Vite.
+Bem-vindo ao projeto de locação de filmes desenvolvido em Vue 3 com TypeScript. Este projeto oferece uma interface para locação de filmes, com funcionalidades como cadastro de clientes, usuários, filmes e controle de locações.
 
-## Recommended IDE Setup
+## Primeiro Acesso
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Para fazer o primeiro acesso ao sistema, utilize as seguintes credenciais:
+- **Login:** rent
+- **Senha:** movie
 
-## Type Support for `.vue` Imports in TS
+## Funcionalidades
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+### Tela Home
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+Ao fazer o login, você será direcionado para a tela principal, que oferece as seguintes opções:
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+- **Clientes:** Permite cadastrar novos clientes e possui funcionalidades completas de CRUD.
+- 
+- **Usuários:** Semelhante à tela de clientes, mas para cadastro de usuários do sistema.
 
-## Customize configuration
+- **Filmes:** Exibe uma lista de filmes com opções de busca por nome e ano, além de paginação. Cada filme possui um botão de alugar, que abre um modal para informar a data de devolução.
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+- **Locações:** Mostra uma lista dos filmes já alugados, oferecendo a opção de devolução.
 
-## Project Setup
+## Como Executar o Projeto Localmente
 
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test:unit
-```
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   cd nome-do-repositorio
