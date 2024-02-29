@@ -10,51 +10,62 @@
 
     <div class="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-500 opacity-50"></div>
 
-    <h1 class="flex mb-6 md:mb-10 mt-20 font-bold text-3xl md:text-5xl text-white lg:ml-[10%] z-10 relative max-sm:justify-center max-sm:mt-20 max-sm:text-4xl">
+    <h1 class="flex mb-6 md:mb-10 mt-20 font-bold text-3xl md:text-5xl text-white lg:ml-[10%] z-[9999] relative max-sm:justify-center max-sm:mt-20 max-sm:text-4xl">
       Lista de Filmes
     </h1>
+  </div>
 
-    <div class="flex max-sm:flex-col gap-2 justify-center items-center px-4 md:px-60 mt-6 md:mt-52 z-10 max-sm:mt-20">
-      <input
-        placeholder="Buscar por Filmes..."
-        type="text"
-        id="search"
-        v-model="searchTerm"
-        @input="handleSearchInput"
-        class="rounded-lg w-full md:w-96 z-10 max-sm:w-full"
-      />
+  <div class="flex max-sm:flex-col gap-2 justify-center items-center px-4 md:px-60 md:mt-2 z-[9999] max-sm:mt-20">
+    <input
+      placeholder="Buscar por Filmes..."
+      type="text"
+      id="search"
+      v-model="searchTerm"
+      @input="handleSearchInput"
+      class="rounded-lg w-full md:w-96 z-10 max-sm:w-full"
+    />
 
-      <input
-        type="number"
-        v-model="selectedYear"
-        class="rounded-lg z-10 max-sm:w-full"
-        placeholder="Buscar por ano..."
-      />
+    <input
+      type="number"
+      v-model="selectedYear"
+      class="rounded-lg z-10 max-sm:w-full"
+      placeholder="Buscar por ano..."
+    />
 
-      <button @click="searchByYear" class="rounded-lg px-4 py-2 z-10 bg-[#8DCEA3] font-semibold text-[#032541] max-sm:w-full">
-        Pesquisar por Ano
-      </button>
+    <button
+      @click="searchByYear"
+      class="rounded-lg px-4 py-2 z-10 bg-[#8DCEA3] font-semibold text-[#032541] max-sm:w-full"
+    >
+      Pesquisar por Ano
+    </button>
 
-      <div v-if="showRentModal" class="overlay">
-        <div class="modal">
-          <h3 class="text-xl font-bold mb-4">{{ selectedMovie?.Title }}</h3>
-          <p class="text-gray-600">{{ selectedMovie?.Type }}</p>
-          <p class="text-gray-600 mb-2">{{ selectedMovie?.Year }}</p>
-          <label for="returnDate" class="block text-sm font-medium text-gray-700">Data de Devolução:</label>
-          <input
-            v-model="returnDate"
-            type="date"
-            id="returnDate"
-            name="returnDate"
-            class="mt-1 p-2 border rounded-md w-full"
-          />
-          <button @click="rentMovie" class="mt-4 bg-[#032541] text-[#8DCEA3] px-5 py-2 rounded-lg font-bold w-full">
-            Alugar
-          </button>
-          <button @click="closeRentModal" class="mt-4 bg-red-500 text-white px-5 py-2 rounded-lg font-bold w-full">
-            Cancelar
-          </button>
-        </div>
+    <div v-if="showRentModal" class="overlay">
+      <div class="modal">
+        <h3 class="text-xl font-bold mb-4">{{ selectedMovie?.Title }}</h3>
+        <p class="text-gray-600">{{ selectedMovie?.Type }}</p>
+        <p class="text-gray-600 mb-2">{{ selectedMovie?.Year }}</p>
+        <label for="returnDate" class="block text-sm font-medium text-gray-700"
+          >Data de Devolução:</label
+        >
+        <input
+          v-model="returnDate"
+          type="date"
+          id="returnDate"
+          name="returnDate"
+          class="mt-1 p-2 border rounded-md w-full"
+        />
+        <button
+          @click="rentMovie"
+          class="mt-4 bg-[#032541] text-[#8DCEA3] px-5 py-2 rounded-lg font-bold w-full"
+        >
+          Alugar
+        </button>
+        <button
+          @click="closeRentModal"
+          class="mt-4 bg-red-500 text-white px-5 py-2 rounded-lg font-bold w-full"
+        >
+          Cancelar
+        </button>
       </div>
     </div>
   </div>
@@ -272,19 +283,18 @@ onMounted(() => {
   loadRentedMovies();
   fetchMovies();
 });
-
 </script>
 
 <style>
 .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.9); /* Ajuste a opacidade conforme necessário */
-    z-index: 5; /* Certifique-se de que o overlay esteja abaixo do modal */
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9); /* Ajuste a opacidade conforme necessário */
+  z-index: 5; /* Certifique-se de que o overlay esteja abaixo do modal */
+}
 
 .modal {
   display: block;
