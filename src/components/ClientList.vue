@@ -1,14 +1,14 @@
 <template>
   <div
-    class="bg-gradient-to-r from-cyan-500 to-blue-500 bg-cover bg-no-repeat p-5 md:p-10 relative"
+    class="bg-gradient-to-r from-cyan-500 to-blue-500 bg-cover bg-no-repeat p-5 md:p-10 relative -z-10 -mt-[85px]"
     style="
       background-image: url('https://images8.alphacoders.com/132/1323294.jpeg');
-      height: 400px;
+      height: 500px;
     "
   >
     <div class="max-w-screen-xl mx-auto">
       <h1
-        class="flex mb-10 mt-10 md:mb-10 font-bold text-3xl md:text-5xl text-white z-10 relative max-sm:justify-center max-sm:mt-20 max-sm:text-4xl"
+        class="flex mb-10 mt-20 md:mb-10 font-bold text-3xl md:text-5xl text-white z-10 relative max-sm:justify-center max-sm:mt-20 max-sm:text-4xl"
       >
         Lista de Clientes
       </h1>

@@ -31,7 +31,7 @@
 
 <style scoped>
 .image {
-  position: relative;
+  /* position: relative; */
   overflow: hidden;
 }
 
@@ -41,7 +41,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: 
     url("../assets/img/9560432.jpg");
   background-size: cover;

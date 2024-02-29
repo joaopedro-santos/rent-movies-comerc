@@ -1,16 +1,16 @@
 <template>
   <div
-    class="bg-gradient-to-r from-cyan-500 to-blue-500 bg-cover bg-no-repeat p-5 md:p-10 relative"
+    class="bg-gradient-to-r from-cyan-500 to-blue-500 bg-cover bg-no-repeat p-5 md:p-10 relative -z-10 -mt-[85px]"
     style="
       background-image: url('https://wallpapers.com/images/featured/blade-runner-2049-ln4wirn5204bujot.jpg');
-      height: 400px;
+      height: 500px;
     "
   >
     <!-- Gradiente -->
 
     <div class="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-500 opacity-50"></div>
 
-    <h1 class="flex mb-6 md:mb-10 font-bold text-3xl md:text-5xl text-white lg:ml-[10%] z-10 relative max-sm:justify-center max-sm:mt-20 max-sm:text-4xl">
+    <h1 class="flex mb-6 md:mb-10 mt-20 font-bold text-3xl md:text-5xl text-white lg:ml-[10%] z-10 relative max-sm:justify-center max-sm:mt-20 max-sm:text-4xl">
       Lista de Filmes
     </h1>
 
