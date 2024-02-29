@@ -1,6 +1,6 @@
 <template>
   <div
-    class=" rounded-lg p-8 m-3 hover:shadow-2xl cursor-pointer transition"
+    class=" rounded-lg p-8 m-3 hover:shadow-2xl hover:bg-[#332f2f6c] cursor-pointer transition"
     @click="clickCard"
   >
     <div class="grid lg:grid-cols-12 gap-2">

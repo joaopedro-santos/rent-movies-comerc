@@ -1,6 +1,6 @@
 <template>
   <div
-    class="image flex justify-center items-center sm:h-[75vh]"
+    class="image flex justify-center items-center sm:h-[77vh]"
   >
     <div class="container max-w-screen-xl mx-auto">
       <div class="grid lg:grid-cols-4 md:grid-cols-1 gap-4">
@@ -42,8 +42,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(#022f3bcc, #1c3b27bd),
-    url("https://images8.alphacoders.com/131/1312070.jpg");
+  background: 
+    url("../assets/img/9560432.jpg");
   background-size: cover;
   background-position: center;
   z-index: -1;
